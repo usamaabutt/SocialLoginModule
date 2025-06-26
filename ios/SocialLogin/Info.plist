@@ -37,14 +37,6 @@
           <string>exp+sociallogin</string>
         </array>
       </dict>
-      <dict>
-        <key>CFBundleURLName</key>
-        <string>auth0</string>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>com.numanappdev.SocialLogin.auth0</string>
-        </array>
-      </dict>
     </array>
     <key>CFBundleVersion</key>
     <string>1</string>

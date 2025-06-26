@@ -1,6 +1,7 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+apply plugin: 'com.google.gms.google-services'
 
 def projectRoot = rootDir.getAbsoluteFile().getParentFile().getAbsolutePath()
 
@@ -92,16 +93,15 @@ android {
         applicationId 'com.numanappdev.SocialLogin'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        googlePlayServicesAuthVersion  "20.7.0"
         versionCode 1
         versionName "1.0.0"
         manifestPlaceholders = [
-            auth0Domain: "dev-srxaw3tjprbhnkdc.au.auth0.comN",   // e.g. "dev-abc123.us.auth0.com"
-            auth0Scheme: "sociallogin"                 // usually "demo" or your app name
-        ]
+         auth0Scheme: "sociallogin",  // Your app’s URL scheme
+         auth0Domain: "dev-srxaw3tjprbhnkdc.au.auth0.com" // Your actual Auth0 domain
+    ]
     }
-    
     signingConfigs {
-
         debug {
             storeFile file('debug.keystore')
             storePassword 'android'

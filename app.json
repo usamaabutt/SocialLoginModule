@@ -26,13 +26,13 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      [
-        "react-native-auth0",
-        {
-          "domain": "dev-srxaw3tjprbhnkdc.au.auth0.com",
-          "customScheme": "sociallogin"
-        }
-      ],
+      // [
+      //   "react-native-auth0",
+      //   {
+      //     "domain": "dev-srxaw3tjprbhnkdc.au.auth0.com",
+      //     "customScheme": "sociallogin"
+      //   }
+      // ],
       "expo-router",
       [
         "expo-splash-screen",
